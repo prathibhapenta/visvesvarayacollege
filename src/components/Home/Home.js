@@ -279,6 +279,9 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
           </div>
         </section>
 
+<section className="focus-section"> <div className="focus-content"> <h1>Trusted by Over 6000+ Students</h1> <p>We have a fully qualified teaching staff.</p> <button>Explore</button> </div> </section>
+       {/* EVENTS AT VCET  */}
+       
         <section className="vcet-hero-wrapper">
         <div className="vcet-hero-layout">
 
@@ -508,17 +511,28 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
       />
 
       {/* Overlay text */}
-      <div className="overlay-text-container">
-        {isOverlayVisible ? (
-          <p className="overlay-text">
-             Successful careers in CSE — Software Engineer, Developer, IT Professional.
-          </p>
-        ) : (
-          <p className="overlay-text">
-           Computer Science Engineering.
-          </p>
-        )}
-      </div>
+      <div className="branch-text-wrapper">
+  {isOverlayVisible ? (
+    <p className="branch-text">
+      {"Successful careers in CSE — Software Engineer, Developer, IT Professional."
+        .split(" ")
+        .map((word, index) => (
+          <span
+            key={index}
+            className="branch-word"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
+            {word}&nbsp;
+          </span>
+        ))}
+    </p>
+  ) : (
+    <p className="branch-text">
+     Computer Science Engineering.
+    </p>
+  )}
+</div>
+      
 
       {/* Icon */}
       <div className="overlay-icon">
@@ -532,7 +546,7 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
       </div>
     </div>
 
-
+ {/* Swap image based on ECE hover */}
     <div className="masonry-item medium" data-aos="fade-up" data-aos-delay="150">
   {/* Swap image based on ECE overlay state */}
   <img
@@ -546,17 +560,27 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   />
 
   {/* Overlay text */}
-  <div className="overlay-text-container">
-    {isEceOverlayVisible ? (
-      <p className="overlay-text">
-        Successful careers in ECE — VLSI Engineer, Embedded Systems, Communication Engineer.
-      </p>
-    ) : (
-      <p className="overlay-text">
-        Electronics and Communication Engineering.
-      </p>
-    )}
-  </div>
+  <div className="branch-text-wrapper">
+  {isEceOverlayVisible ? (
+    <p className="branch-text">
+      {"Successful careers in ECE — VLSI Engineer, Embedded Systems, Communication Engineer."
+        .split(" ")
+        .map((word, index) => (
+          <span
+            key={index}
+            className="branch-word"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
+            {word}&nbsp;
+          </span>
+        ))}
+    </p>
+  ) : (
+    <p className="branch-text">
+      Electronics and Communication Engineering.
+    </p>
+  )}
+</div>
 
   {/* Icon */}
   <div className="overlay-icon">
@@ -574,7 +598,7 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   </div>
 </div>
 
-
+{/* Swap image based on Civil hover */}
       <div className="masonry-item medium" data-aos="fade-up" data-aos-delay="200">
   {/* Swap image based on Civil hover */}
   <img
@@ -588,17 +612,28 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   />
 
   {/* Overlay text */}
-  <div className="overlay-text-container">
-    {isCivilOverlayVisible ? (
-      <p className="overlay-text">
-        Successful careers in Civil — Structural Engineer, Site Engineer, Project Manager.
-      </p>
-    ) : (
-      <p className="overlay-text">
-        Civil Engineering.
-      </p>
-    )}
-  </div>
+ <div className="branch-text-wrapper">
+  {isCivilOverlayVisible ? (
+    <p className="branch-text">
+      {"Successful careers in Civil — Structural Engineer, Site Engineer, Project Manager."
+        .split(" ")
+        .map((word, index) => (
+          <span
+            key={index}
+            className="branch-word"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
+            {word}&nbsp;
+          </span>
+        ))}
+    </p>
+  ) : (
+    <p className="branch-text">
+      Civil Engineering.
+    </p>
+  )}
+</div>
+
 
   {/* Icon */}
   <div className="overlay-icon">
@@ -616,7 +651,7 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   </div>
 </div>
 
-
+{/* Swap image based on EEE hover */}
       <div className="masonry-item tall" data-aos="fade-up" data-aos-delay="250">
   {/* Swap image based on EEE hover */}
   <img
@@ -630,17 +665,28 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   />
 
   {/* Overlay text */}
-  <div className="overlay-text-container">
-    {isEeeOverlayVisible ? (
-      <p className="overlay-text">
-        Successful careers in EEE — Power Engineer, Electrical Design Engineer, Automation Specialist.
-      </p>
-    ) : (
-      <p className="overlay-text">
-        Electrical and Electronics Engineering.
-      </p>
-    )}
-  </div>
+  <div className="branch-text-wrapper">
+  {isEeeOverlayVisible ? (
+    <p className="branch-text">
+      {"Successful careers in EEE — Power Engineer, Electrical Design Engineer, Automation Specialist."
+        .split(" ")
+        .map((word, index) => (
+          <span
+            key={index}
+            className="branch-word"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
+            {word}&nbsp;
+          </span>
+        ))}
+    </p>
+  ) : (
+    <p className="branch-text">
+      Electrical and Electronics Engineering.
+    </p>
+  )}
+</div>
+
 
   {/* Icon */}
   <div className="overlay-icon">
@@ -658,7 +704,7 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   </div>
 </div>
 
-
+{/* Swap image based on AIML hover */}
       <div className="masonry-item tall" data-aos="fade-up" data-aos-delay="300">
   {/* Swap image based on AIML hover */}
   <img
@@ -672,17 +718,28 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   />
 
   {/* Overlay text */}
-  <div className="overlay-text-container">
-    {isAimlOverlayVisible ? (
-      <p className="overlay-text">
-        Successful careers in AIML — AI Engineer, Machine Learning Engineer, Data Scientist.
-      </p>
-    ) : (
-      <p className="overlay-text">
-        Artificial Intelligence & Machine Learning.
-      </p>
-    )}
-  </div>
+  <div className="branch-text-wrapper">
+  {isAimlOverlayVisible ? (
+    <p className="branch-text">
+      {"Successful careers in AIML — AI Engineer, Machine Learning Engineer, Data Scientist."
+        .split(" ")
+        .map((word, index) => (
+          <span
+            key={index}
+            className="branch-word"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
+            {word}&nbsp;
+          </span>
+        ))}
+    </p>
+  ) : (
+    <p className="branch-text">
+      Artificial Intelligence & Machine Learning.
+    </p>
+  )}
+</div>
+  
 
   {/* Icon */}
   <div className="overlay-icon">
@@ -700,9 +757,9 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   </div>
 </div>
 
-
+ {/* Swap image based on Data Science hover */}
     <div className="masonry-item medium" data-aos="fade-up" data-aos-delay="200">
-  {/* Swap image based on Data Science hover */}
+ 
   <img
     src={
       isDsOverlayVisible
@@ -714,17 +771,28 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
   />
 
   {/* Overlay text */}
-  <div className="overlay-text-container">
-    {isDsOverlayVisible ? (
-      <p className="overlay-text">
-        Successful careers in Data Science — Data Scientist, Data Analyst, Machine Learning Engineer.
-      </p>
-    ) : (
-      <p className="overlay-text">
-        Data Science Engineering.
-      </p>
-    )}
-  </div>
+  <div className="branch-text-wrapper">
+  {isDsOverlayVisible ? (
+    <p className="branch-text">
+      {"Successful careers in Data Science — Data Scientist, Data Analyst, Machine Learning Engineer."
+        .split(" ")
+        .map((word, index) => (
+          <span
+            key={index}
+            className="branch-word"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
+            {word}&nbsp;
+          </span>
+        ))}
+    </p>
+  ) : (
+    <p className="branch-text">
+      Data Science Engineering.
+    </p>
+  )}
+</div>
+
 
   {/* Icon */}
   <div className="overlay-icon">
@@ -748,7 +816,6 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
       </section>
 
 
-       {/* EVENTS AT VCET  */}
       <section className="vcet-feature-section">
         <div className="vcet-feature-container">
  <div class="gallery-intro">
