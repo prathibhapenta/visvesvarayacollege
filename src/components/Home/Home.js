@@ -94,7 +94,6 @@ const [isDsOverlayVisible, setIsDsOverlayVisible] = useState(false);
 const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
 
  const [activeIndex, setActiveIndex] = useState(0);
- const [isOpen, setIsOpen] = useState(false);
   // Automatic switch every 30 seconds
   useEffect(() => {
     const interval = setInterval(() => {
