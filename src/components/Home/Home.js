@@ -158,7 +158,7 @@ const [isEeeOverlayVisible, setIsEeeOverlayVisible] = useState(false);
 
       {/* Optional: show current video number or hint */}
       <div className="hero-content">
-        <h4>Welcome to Visvesvaraya College of Engineering</h4>
+        <h4>Welcome to Visvesvaraya College of Engineering and Technology</h4>
         <p>Empowering Innovation • Excellence • Future Leaders</p>
       </div>
     </div>
